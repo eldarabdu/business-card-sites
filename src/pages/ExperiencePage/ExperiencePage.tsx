@@ -71,31 +71,32 @@ const mock = [
 export const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
 	return (
 		<div className={classes.experience}>
-			<ScrollArea className={classes.scroll} scrollbars="y" h={"100%"}>
-				<motion.div
-					key="Jul2024Present"
-					initial={{ translateY: "-100%", opacity: 0 }}
-					animate={{ translateY: 0, opacity: 1 }}
-					exit={{ translateY: "-100%", opacity: 0 }}
-					transition={{ duration: 0.4 }}
-				>
-					<div className={classes.head}>
-						<div className={classes.nav}>
-							<Link to="/">
-								<ArrowLeft width={32} height={32} className={classes.icon} />
-							</Link>
+			<ScrollArea className={classes.scroll} scrollbars="y">
+				<div className={classes.container}>
+					<motion.div
+						key="Jul2024Present"
+						initial={{ translateY: "-100%", opacity: 0 }}
+						animate={{ translateY: 0, opacity: 1 }}
+						exit={{ translateY: "-100%", opacity: 0 }}
+						transition={{ duration: 0.4 }}
+					>
+						<div className={classes.head}>
+							<div className={classes.nav}>
+								<Link to="/">
+									<ArrowLeft width={32} height={32} className={classes.icon} />
+								</Link>
+							</div>
+							<Title fw={600} lh={1.1} fz={52} className={classes.title}>
+								My
+								<br />
+								Experience
+							</Title>
 						</div>
-						<Title fw={600} lh={1.1} fz={52} className={classes.title}>
-							My
-							<br />
-							Experience
-						</Title>
-					</div>
-				</motion.div>
-
-				<Stack mih={"70dvh"} justify="space-between">
-					<SlidTabs tabs={mock} defaultValue={"Personal Assistant"} />
-					<div>
+					</motion.div>
+					<Stack justify="space-between">
+						<SlidTabs tabs={mock} defaultValue={"Personal Assistant"} />
+					</Stack>
+					<div className={classes.links}>
 						<Divider className={classes.divider} h={1} m={0} w={"100%"} />
 						<Flex gap="xs" p={24} className={classes.links}>
 							<a
@@ -124,7 +125,7 @@ export const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
 							</a>
 						</Flex>
 					</div>
-				</Stack>
+				</div>
 			</ScrollArea>
 		</div>
 	)

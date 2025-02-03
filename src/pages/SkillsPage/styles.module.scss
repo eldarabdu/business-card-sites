@@ -6,10 +6,16 @@
 	width: 100%;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
 .head {
 	display: flex;
 	flex-direction: column;
-	height: 30dvh;
+	height: functions.toRem(318px);
 	gap: functions.toRem(32px);
 	justify-content: space-between;
 	padding: functions.toRem(24px) functions.toRem(24px) functions.toRem(68px);
@@ -21,7 +27,7 @@
 
 .title {
 	color: var(--mantine-color-yellow-5);
-	filter: drop-shadow(-3px 3px 3px rgba(63, 100, 99, 0.5));
+	filter: drop-shadow(-3px 3px 3px rgba(63, 100, 99, 0.1));
 }
 
 .button {
@@ -48,4 +54,8 @@
 	display: flex;
 	width: 100%;
 	overflow: hidden;
+}
+
+.links {
+	margin-top: auto;
 }
