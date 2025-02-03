@@ -9,17 +9,19 @@
 .head {
 	display: flex;
 	flex-direction: column;
-	height: 40%;
+	height: 30dvh;
 	gap: functions.toRem(32px);
 	justify-content: space-between;
 	padding: functions.toRem(24px) functions.toRem(24px) functions.toRem(68px);
 	border-radius: 0 0 functions.toRem(52px) 0;
 
-	background-color: var(--mantine-color-green-7);
+	background-color: rgba(168, 188, 187, 0.6);
+	backdrop-filter: blur(10px);
 }
 
 .title {
-	color: var(--mantine-color-yellow-3);
+	color: var(--mantine-color-yellow-5);
+	filter: drop-shadow(-3px 3px 3px rgba(63, 100, 99, 0.5));
 }
 
 .button {

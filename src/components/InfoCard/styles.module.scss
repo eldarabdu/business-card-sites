@@ -4,13 +4,15 @@
 	width: 90%;
 	margin-left: auto;
 	padding: functions.toRem(24px);
-	background-color: var(--mantine-color-green-7);
+	background-color: rgba(168, 188, 187, 0.6);
+	backdrop-filter: blur(10px);
 
 	border-radius: functions.toRem(24px) 0 0 functions.toRem(24px);
 }
 
 .title {
-	color: var(--mantine-color-yellow-3);
+	color: var(--mantine-color-yellow-5);
+	filter: drop-shadow(-3px 3px 3px rgba(63, 100, 99, 0.5));
 }
 
 .subtitle {

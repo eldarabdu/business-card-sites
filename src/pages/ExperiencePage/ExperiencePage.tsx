@@ -93,7 +93,7 @@ export const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
 					</div>
 				</motion.div>
 
-				<Stack h={"100%"} justify="space-between">
+				<Stack mih={"70dvh"} justify="space-between">
 					<SlidTabs tabs={mock} defaultValue={"Personal Assistant"} />
 					<div>
 						<Divider className={classes.divider} h={1} m={0} w={"100%"} />
