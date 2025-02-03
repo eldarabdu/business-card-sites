@@ -16,7 +16,7 @@ interface ExperiencePageProps {}
 const mock = [
 	{
 		period: "Jul 2024 - Present",
-		title: "PERSONAL ASSISTANT",
+		title: "Personal Assistant",
 		company: "Aymen Farm",
 		content: [
 			"Supervise and manage all financial transactions, making sure that records and reporting are accurate and timely.",
@@ -29,7 +29,7 @@ const mock = [
 
 	{
 		period: "Jan 2024 - Jul 2024",
-		title: "ACCOUNTANT",
+		title: "Accountant",
 		company: "Cargo Boss Logistics PLC",
 		content: [
 			"Managed all financial transactions, ensuring accuracy and compliance with company policies and regulations",
@@ -42,7 +42,7 @@ const mock = [
 
 	{
 		period: "Sep-2023 - Dec-2023",
-		title: "BANK TRAINEE",
+		title: "Bank Trainee",
 		company: "Zamzam Bank",
 		content: [
 			"Provided exceptional customer service to a large volume of clients, ensuring their needs were addressed quickly and professionally.",
@@ -94,7 +94,7 @@ export const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
 				</motion.div>
 
 				<Stack h={"100%"} justify="space-between">
-					<SlidTabs tabs={mock} defaultValue={"PERSONAL ASSISTANT"} />
+					<SlidTabs tabs={mock} defaultValue={"Personal Assistant"} />
 					<div>
 						<Divider className={classes.divider} h={1} m={0} w={"100%"} />
 						<Flex gap="xs" p={24} className={classes.links}>

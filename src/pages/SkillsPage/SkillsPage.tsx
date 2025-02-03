@@ -15,7 +15,7 @@ interface SkillsPageProps {}
 
 const mock = [
 	{
-		title: "TECHNICAL SKILLS",
+		title: "Technical Skills",
 		content: [
 			"Proficient in MS Excel, Word and PowerPoint",
 			"Software for Finance/Accounting (Peachtree)",
@@ -25,7 +25,7 @@ const mock = [
 	},
 
 	{
-		title: "SOFT SKILLS",
+		title: "Soft Skills",
 		content: [
 			"Excellent teamwork and collaboration capabilities",
 			"Great attention to details",
@@ -64,7 +64,7 @@ export const SkillsPage: FC<SkillsPageProps> = ({}) => {
 					</div>
 				</motion.div>
 				<Stack h={"100%"} justify="space-between">
-					<SlidTabs tabs={mock} defaultValue={"TECHNICAL SKILLS"} />
+					<SlidTabs tabs={mock} defaultValue={"Technical Skills"} />
 					<div>
 						<Divider className={classes.divider} h={1} m={0} w={"100%"} />
 						<Flex gap="xs" p={24} className={classes.links}>

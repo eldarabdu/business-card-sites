@@ -109,7 +109,7 @@ export const Card: FC<CardProps> = ({
 				{experience && (
 					<>
 						<div>
-							<Title fz={62} className={classes.title} fw={300}>
+							<Title fz={24} className={classes.title} fw={300} mb={12}>
 								1 YEAR
 							</Title>
 							{subtitle && (
