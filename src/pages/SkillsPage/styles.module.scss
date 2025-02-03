@@ -1,0 +1,49 @@
+@use "@/utils/functions";
+@use "@/utils/mixins";
+
+.skills {
+	height: 100%;
+	width: 100%;
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	height: 40%;
+	gap: functions.toRem(32px);
+	justify-content: space-between;
+	padding: functions.toRem(24px) functions.toRem(24px) functions.toRem(68px);
+	border-radius: 0 0 functions.toRem(52px) 0;
+
+	background-color: var(--mantine-color-green-7);
+}
+
+.title {
+	color: var(--mantine-color-yellow-3);
+}
+
+.button {
+	border: none;
+	background-color: rgba(63, 100, 99, 0.6);
+	backdrop-filter: blur(10px);
+
+	transition: background-color 0.3s;
+
+	&Max {
+		width: 100%;
+	}
+
+	@include mixins.hover() {
+		background-color: rgba(63, 100, 99, 0.9);
+	}
+}
+
+.icon {
+	fill: #fff;
+}
+
+.tabs {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+}

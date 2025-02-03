@@ -1,0 +1,83 @@
+@use "@/utils/functions";
+@use "@/utils/mixins";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	gap: functions.toRem(12px);
+}
+
+.card {
+	position: relative;
+
+	min-height: functions.toRem(320px);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-self: flex-end;
+
+	background-color: rgba(168, 188, 187, 0.6);
+	backdrop-filter: blur(10px);
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.title {
+	font-weight: 400;
+	color: var(--mantine-color-white);
+	line-height: 1.2;
+	font-size: functions.toRem(32px);
+}
+
+.text {
+	font-weight: 300;
+	color: var(--mantine-color-white);
+	line-height: 1.2;
+	font-size: functions.toRem(16px);
+}
+
+.link {
+	align-self: stretch;
+	width: 100%;
+}
+
+.button {
+	border: none;
+	background-color: rgba(63, 100, 99, 0.6);
+	backdrop-filter: blur(10px);
+
+	transition: background-color 0.3s;
+
+	&Max {
+		width: 100%;
+	}
+
+	@include mixins.hover() {
+		background-color: rgba(63, 100, 99, 0.9);
+	}
+}
+
+.icon {
+	fill: #fff;
+}
+
+.invisible {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.special {
+	width: 100px;
+}

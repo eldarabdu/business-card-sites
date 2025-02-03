@@ -1,0 +1,38 @@
+@use "@/utils/functions";
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	padding: functions.toRem(24px);
+	background-color: var(--mantine-color-green-7);
+
+	border-radius: functions.toRem(24px) 0 0 functions.toRem(24px);
+}
+
+.title {
+	color: var(--mantine-color-yellow-3);
+}
+
+.subtitle {
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--mantine-color-gray-1);
+}
+
+.period {
+	font-size: 12px;
+	font-weight: 300;
+	color: var(--mantine-color-gray-1);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding-left: 5px;
+}
+
+.item {
+	font-weight: 300;
+	color: var(--mantine-color-gray-1);
+}

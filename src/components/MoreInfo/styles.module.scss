@@ -1,0 +1,20 @@
+.links {
+}
+
+.link {
+	display: flex;
+}
+
+.button {
+	display: flex;
+	padding: 8px;
+	height: 62px;
+	width: fit-content;
+	border-color: rgba(63, 100, 99);
+
+	color: rgba(63, 100, 99);
+}
+
+.icon {
+	fill: rgba(63, 100, 99);
+}
