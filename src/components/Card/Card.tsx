@@ -110,7 +110,7 @@ export const Card: FC<CardProps> = ({
 					<>
 						<div>
 							<Title fz={24} className={classes.title} fw={300} mb={12}>
-								1 YEAR
+								1+ YEAR
 							</Title>
 							{subtitle && (
 								<Text fz={18} className={classes.text} lineClamp={3}>
