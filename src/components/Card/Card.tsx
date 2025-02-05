@@ -8,6 +8,7 @@ import LinkedIn from "@/assets/icons/linkedin-logo.svg?react"
 import Telegram from "@/assets/icons/telegram-logo.svg?react"
 import Whatsapp from "@/assets/icons/whatsapp-logo.svg?react"
 import EmailIcon from "@/assets/icons/envelope-simple.svg?react"
+import SumeyaCV from "@/assets/SumeyaCV.pdf"
 
 interface CardProps {
 	title: string
@@ -126,7 +127,7 @@ export const Card: FC<CardProps> = ({
 								</Button>
 							</Link>
 
-							<a href="SumeyaCV.pdf" download>
+							<a href={SumeyaCV} download>
 								<Button className={classes.button} c={"white"} variant="default">
 									Download CV
 								</Button>

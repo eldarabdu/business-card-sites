@@ -2,6 +2,7 @@ import { FC } from "react"
 import classes from "./styles.module.scss"
 import { Outlet } from "react-router-dom"
 import { motion } from "motion/react"
+import Hayu from "@/assets/sumeya.jpg"
 
 interface LayoutProps {}
 
@@ -23,6 +24,8 @@ export const Layout: FC<LayoutProps> = ({}) => {
 
 	return (
 		<div className={classes.layout}>
+			<img src={Hayu} className={classes.backgroundImage} alt="photo of Sumeya A/Bedewi" />
+			<div className={classes.overlay}></div>
 			<motion.div
 				variants={pageVariants}
 				className={classes.motion}

@@ -27,7 +27,7 @@ interface MoreInfoProps {
 
 export const MoreInfo: FC<MoreInfoProps> = ({ children, title, text }) => {
 	const { name, avatarUrl }: any = {
-		name: "Sumeya A/Bedewi",
+		name: "Sumeya A/Bedewi ",
 		avatarUrl: "/sumeya.jpg",
 	}
 
